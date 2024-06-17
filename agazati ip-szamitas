@@ -156,3 +156,13 @@
 192.168.2.244	192.168.2.247
 192.168.2.248	192.168.2.251
 192.168.2.252	192.168.2.255
+
+Router#copy running config tftp
+
+line con 0 password
+
+line vty 0 4
+login local
+transport input ssh
+ip domain name:(nev)
+crypto key generate rsa:1024
