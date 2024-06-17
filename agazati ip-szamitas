@@ -166,3 +166,4 @@ login local
 transport input ssh
 ip domain name:(nev)
 crypto key generate rsa:1024
+ip ssh version 2
